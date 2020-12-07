@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User login Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: 'castoro' , serif;
+        }
+        .logo {
+            background-color: skyblue;
+            font-size: 4em;
+        }
+        a {
+            text-decoration: none;
+            color:red;
+        }
+        h1 {
+            font-size: 2em;
+        }
+        .container {
+            width: 1080px;
+            margin: auto;
+            background-color: beige;
+            padding: 10px;
+        }
+        nav {
+            background-color: #333;
+            width: 100%;
+        }
+        nav ul li {
+            list-style-type: none;
+            display: inline-block;
+            width: 150px;
+        }
+        nav a {
+            display: block;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a:hover {
+            background-color: red;
+            color: black;
+        }
+        .header-container header {
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+            padding: 10px;
+            text-align: center;
+        }
+        .text-center {
+            text-align: center;
+        }
+    </style>         
+</head>
+<body>
+    <div class="container">
+        <div class="header-container">
+            <header>
+                <div class="logo">Welcome to Blogs</div>
+            </header>    
+                <nav>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="login.html" target="_self">Login</a></li>
+                        <li><a href="blogs.html" target="_self">Blogs</a></li>
+                    </ul>
+                </nav>
+        </div><br/>
+        <div class="text-center">
+            <div id="content">     
+             <h2> Enter Your Login Details</h2> <br/>
+                 <form>
+                    <div class="form-input">
+                        <input type="text" name="uname" placeholder="Email Address*" pattern="^[a-z,A-Z]+@[a-z,A-Z]+.com$" value="" required />
+                    </div><br/>
+                    <div class="pass">
+                        <input type="password" name="pname" placeholder="Password*" id="password" required/>
+                    </div> <br/>
+                    <button type="submit">SignIn</button>  <br/> <br/>
+                    <input type="checkbox" checked="checked"> Remember me   
+                    <button type="button" class="cancelbtn"> Cancel</button>   
+                    Forgot <a href="#"> password? </a>
+                </form>    
+            </div>
+        </div>
+    </div> 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+</body>
+</html>
